@@ -1,0 +1,919 @@
+@font-face {
+    font-family: "Elephant";
+    src: url(./assets/fonts/Elephant\ Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    zoom: 0.67;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 174px;
+    gap: 15px;
+    background-color: hsl(144, 58%, 75%)
+}
+
+.header-logo-container span {
+    font-family: "Elephant";
+    color: #224F34;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header-nav ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 57px;
+}
+
+.header-nav ul li {
+    list-style: none;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:active,
+.header-nav ul li a:hover {
+    color: black;
+}
+
+.header-login-container {
+    display: flex;
+    align-items: center;
+    gap: 59px;
+}
+
+.header-login-container img {
+    position: relative;
+    bottom: -5px;
+    height: 30px;
+    width: 30px;
+}
+
+.header-login-container a {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-decoration: none;
+    border-radius: 3px;
+    border: 2.5px solid #224F34;
+    padding: 11px 41px;
+
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+.header-login-container a:hover {
+    background-color: #224F34;
+    color: white;
+    border-radius: 50px;
+}
+
+.header-login-container a:active {
+    background-color: #ffffff00;
+    color: #224F34;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    background-color: #C2EFD4;
+    padding: 166px 174px;
+}
+
+.main-text-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 54px;
+}
+
+.main-text-area-container .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.main-text-area-container .text-area h1 {
+    width: 649px;
+    color: #224F34;
+    font-family: "Rufina", serif;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-text-area-container .text-area p {
+    width: 432px;
+    color: #267D49;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.main-text-area-container a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-decoration: none;
+    text-align: center;
+    background-color: #224F34;
+    border: 2px solid #224F34;
+    border-radius: 5px;
+    box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.30);
+    padding: 22px 60px;
+
+    transition: border 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease-in-out, color 0.3s ease;
+}
+
+.main-text-area-container a:hover {
+    border: 2px solid #224F34;
+    background-color: #224f3400;
+    border-radius: 50px;
+    color: #224F34;
+}
+
+.main-text-area-container a:active {
+    background-color: #224F34;
+    color: white;
+}
+
+/* ............. */
+
+.best-selling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 144px 176px;
+}
+
+.best-selling .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.best-selling .text-area h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #224F34;
+}
+
+.best-selling .text-area p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #224F34;
+}
+
+.best-selling-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+
+/* ........................... */
+.best-selling-cards .card-3,
+.best-selling-cards .card-2,
+.best-selling-cards .card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+}
+
+.best-selling-cards .card-3 img,
+.best-selling-cards .card-2 img,
+.best-selling-cards .card-1 img {
+    border-radius: 15px;
+    background: fixed;
+}
+
+.best-selling-cards .card-3 .text-area,
+.best-selling-cards .card-2 .text-area,
+.best-selling-cards .card-1 .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.best-selling-cards .card-3 h3,
+.best-selling-cards .card-2 h3,
+.best-selling-cards .card-1 h3 {
+    color: #373737;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.best-selling-cards .card-3 .pricing-rating,
+.best-selling-cards .card-2 .pricing-rating,
+.best-selling-cards .card-1 .pricing-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+}
+
+.best-selling-cards .card-3 .text-area .pricing-rating span,
+.best-selling-cards .card-2 .text-area .pricing-rating span,
+.best-selling-cards .card-1 .text-area .pricing-rating span {
+    font-family: "Poppins", sans-serif;
+    color: #454545;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.best-selling-cards .card-3 .pricing-rating .vl,
+.best-selling-cards .card-2 .pricing-rating .vl,
+.best-selling-cards .card-1 .pricing-rating .vl {
+    width: 1px;
+    height: 27px;
+    background: #454545;
+}
+
+.best-selling-cards .card-3 .rating-container,
+.best-selling-cards .card-2 .rating-container,
+.best-selling-cards .card-1 .rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.best-selling-cards .card-3 .rating-container span,
+.best-selling-cards .card-2 .rating-container span,
+.best-selling-cards .card-1 .rating-container span {
+    font-family: "Poppins", sans-serif;
+    color: #454545;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ........................... */
+
+.best-selling .see-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+    padding: 16px 55px;
+    border: 2px solid #224F34;
+
+    color: #224F34;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    transition: background-color 0.3s ease, border-radius 0.3s ease-in-out;
+}
+
+.best-selling .see-all-btn:hover {
+    background-color: hsl(144, 40%, 62%);
+    border-radius: 50px;
+}
+
+.best-selling .see-all-btn:active {
+    background-color: hsl(144, 40%, 82%);
+}
+
+/* .............. */
+.our-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 83px;
+    padding: 97.5px 175px 195px 175px;
+}
+
+.our-products .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.our-products .text-container h2 {
+    font-family: "Roboto Slab";
+    color: #224F34;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.our-products .text-container .text-area-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+}
+
+.our-products .text-container .text-area-container ul li a {
+    text-decoration: none;
+    text-align: center;
+
+    color: #454545;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    transition: color 0.3s ease;
+}
+
+.our-products .text-container .text-area-container ul li a:hover {
+    color: #224F34;
+}
+
+.our-products .text-container .text-area-container ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #224F34;
+    transition: width 0.3s ease-in-out;
+}
+
+.our-products .text-container .text-area-container ul li a:hover::after {
+    width: 100%;
+}
+
+.our-products-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 82px;
+}
+
+/* ............................................... */
+.our-products-cards-container .card-container-2,
+.our-products-cards-container .card-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.our-products-cards-container .card-container-2 .card-4,
+.our-products-cards-container .card-container-2 .card-3,
+.our-products-cards-container .card-container-2 .card-2,
+.our-products-cards-container .card-container-2 .card-1,
+.our-products-cards-container .card-container-1 .card-4,
+.our-products-cards-container .card-container-1 .card-3,
+.our-products-cards-container .card-container-1 .card-2,
+.our-products-cards-container .card-container-1 .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.our-products-cards-container .card-container-2 img,
+.our-products-cards-container .card-container-1 img {
+    border-radius: 15px;
+    background: fixed;
+}
+
+.our-products-cards-container .card-container-2 .text-area-container,
+.our-products-cards-container .card-container-1 .text-area-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.our-products-cards-container .card-container-2 .text-area-container h3,
+.our-products-cards-container .card-container-1 .text-area-container h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Poppins", sans-serif;
+    color: #373737;
+    text-align: center;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating,
+.our-products-cards-container .card-container-1 .pricing-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating span,
+.our-products-cards-container .card-container-1 .pricing-rating span {
+    color: #454545;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our-products-cards-container .card-container-2 .pricing-rating .vl,
+.our-products-cards-container .card-container-1 .pricing-rating .vl {
+    background: #454545;
+    width: 1px;
+    height: 27px;
+}
+
+.our-products-cards-container .card-container-2 .rating-container,
+.our-products-cards-container .card-container-1 .rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex-direction: row;
+}
+
+/* ............................................... */
+
+.exclusive-offer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 97.5px 175px 218px 175px;
+}
+
+.exclusive-offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 41px;
+    gap: 104px;
+    width: 1377px;
+    height: 596px;
+    background-color: #C2EFD4;
+    border-radius: 15px;
+}
+
+.exclusive-offer .text-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 41px;
+}
+
+.exclusive-offer .text-area-container .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.exclusive-offer .text-area-container .text-area h2 {
+    font-family: "Roboto Slab";
+    color: #224F34;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.exclusive-offer .text-area-container .text-area p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36.74px;
+}
+
+.exclusive-offer .day-hour-min {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.exclusive-offer .day-hour-min .time {
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 17px 29px;
+    text-align: center;
+}
+
+.exclusive-offer .day-hour-min .time h3 {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.exclusive-offer .day-hour-min .time p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.exclusive-offer .text-area-container a {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #224F34;
+    border: 2px solid #224F34;
+    padding: 22px 64px;
+    border-radius: 3px;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+
+    transition: border 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease-in-out, color 0.3s ease;
+}
+
+.exclusive-offer .text-area-container a:hover {
+    border: 2px solid #224F34;
+    background-color: #224f3400;
+    border-radius: 50px;
+    color: #224F34;
+}
+
+.exclusive-offer .text-area-container a:active {
+    background-color: #224F34;
+    color: white;
+}
+
+/* ............................................... */
+
+.designer-clothes-for-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    /* margin-bottom: 111px; */
+    padding: 97.5px 175px 249px 175px;
+}
+
+.designer-clothes-for-you-container .text-area-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+    text-align: center;
+}
+
+.designer-clothes-for-you-container .text-area-container h2 {
+    color: #224F34;
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .text-area-container p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+
+.designer-clothes-for-you-container .card-container .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.designer-clothes-for-you-container .card-container .cards img {
+    border-radius: 15px;
+    background: fixed;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area h3 {
+    color: #373737;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.designer-clothes-for-you-container .card-container .cards .text-area p {
+    color: #373737;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.46px;
+    width: 420px;
+}
+/* ............................................... */
+
+.feedback-corner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+    padding: 97.5px 175px 193px 175px;
+}
+
+.feedback-corner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.feedback-corner h2 {
+    color: #224F34;
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feedback-corner .text-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+}
+
+.feedback-corner .text-area .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22px;
+    padding: 21px;
+    background-color: #C2EFD4;
+    border-radius: 10px;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-corner .text-area .cards h3 {
+    color: #224F34;
+    font-family: "Roboto Serif";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feedback-corner .text-area .cards p {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 401px;
+}
+
+.feedback-corner-container .slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 51px;
+}
+
+.feedback-corner-container .slider .padding {
+    padding: 13px 16px;
+    border-radius: 5px;
+    background-color: white;
+    filter: drop-shadow(0px 7px 51px rgba(0, 0, 0, 0.10));
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-out;
+}
+
+.feedback-corner-container .slider .padding:hover {
+    background-color: #C2EFD4;
+}
+
+.feedback-corner-container .slider .padding:active {
+    background-color: hsl(144, 58%, 65%);
+}
+
+/* ............................................... */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #224F34;
+    padding: 82px 175px;
+    gap: 154px;
+}
+
+footer .first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 144px;
+}
+
+.first .logo-and-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 44px;
+}
+
+.first .logo-and-social-media h2 {
+    color: #FFF;
+    font-family: "Elephant";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first .logo-and-social-media .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.first .logo-and-social-media .social-media-container h3 {
+    color: #FFF;
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.first .logo-and-social-media .social-media-container .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.first .shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.first .shop-container h2 {
+    color: #FFF;
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.first .shop-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+}
+
+.first .shop-container ul li a {
+    text-decoration: none;
+    color: #C2EFD4;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
