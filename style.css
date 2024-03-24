@@ -724,6 +724,7 @@ main {
     line-height: 31.46px;
     width: 420px;
 }
+
 /* ............................................... */
 
 .feedback-corner-container {
@@ -834,7 +835,7 @@ footer .first {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 144px;
+    gap: 160px;
 }
 
 .first .logo-and-social-media {
@@ -880,6 +881,7 @@ footer .first {
     gap: 36px;
 }
 
+.first .company-container,
 .first .shop-container {
     display: flex;
     flex-direction: column;
@@ -888,6 +890,7 @@ footer .first {
     gap: 25px;
 }
 
+.first .company-container h2,
 .first .shop-container h2 {
     color: #FFF;
     font-family: "Roboto Slab";
@@ -898,6 +901,7 @@ footer .first {
     text-transform: uppercase;
 }
 
+.first .company-container ul,
 .first .shop-container ul {
     display: flex;
     flex-direction: column;
@@ -907,6 +911,7 @@ footer .first {
     list-style: none;
 }
 
+.first .company-container ul li a,
 .first .shop-container ul li a {
     text-decoration: none;
     color: #C2EFD4;
@@ -914,6 +919,107 @@ footer .first {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.first .stay-up-to-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 38px;
+}
+
+.first .stay-up-to-date h2 {
+    color: #FFF;
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.first .stay-up-to-date .input-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.first .stay-up-to-date .input-tag input {
+    padding: 24px 185px 18px 29px;
+    background-color: #ffffff00;
+    border-radius: 3px 0 3px 0;
+    border: 2px solid #A3F3BE;
+}
+
+.first .stay-up-to-date .input-tag input:focus {
+    background-color: #FFF;
+}
+
+.first .stay-up-to-date .input-tag input::placeholder:focus {
+    color: #000000;
+
+}
+
+.first .stay-up-to-date .input-tag input::placeholder {
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first .stay-up-to-date .input-tag a {
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    text-align: center;
+    padding: 19px 26px;
+    background-color: #A3F3BE;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.second .horizontal-line {
+    width: 1051px;
+    height: 2px;
+    background: #A3F3BE;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.second ul li a {
+    text-align: center;
+    text-decoration: none;
+
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
 }
